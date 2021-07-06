@@ -1,59 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+
     <style>
-        .flex-div {
-            width: 400px;
-            height: 400px;
+        .card-container {
             display: flex;
+            width: 100%;
             flex-wrap: wrap;
-            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid black;
         }
 
-        .my-div {
-            color: blue;
-            border: 2px dashed red;
-            font-weight: 900;
-            background-color: darkgoldenrod;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 20px;
-            height: 100px;
+        .card {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 20%;
+            align-items: center;
+            font-family: 'Otomanopee One', sans-serif;
         }
-        .my-div2 {
-            color: rgb(150 100 50);
-            border: 2px dashed red;
-            font-weight: bold;
-            background-color: darkblue;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 15px;
-            height: 200px;
-        }
-        .my-div3 {
-            color: rgba(200, 100, 100, 0.5);
-            border: 2px dashed red;
-            font-weight: 100;
-            background-color: darkgreen;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .description {
+            text-align: center;
+            margin: 5px 2px;
             font-size: 10px;
-            height: 120px;
+        }
+
+        .price {
+            font-weight: 600;
+        }
+
+        .buy-button {
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+
+        .buy-button:hover {
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+        }
+
+        @media (max-width: 700px){
+            .buy-button {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .card {
+                flex-basis: 100%;
+            }
+
+            .description {
+                display: none;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        div {
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        img {
+            width: 108px;
         }
     </style>
 </head>
+
 <body>
-    <div class="flex-div">
-        <div class="my-div">
-            Olá, mundo!
+    <div class="card-container">
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://img.elo7.com.br/product/zoom/28D520C/pacote-adriana-cortadores.jpg" />
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan lacinia</p>
+            <span class="price">Preço: R$XXXX,XX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
         </div>
-        <div class="my-div2">
-            Olá, mundo 2!
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://img.elo7.com.br/product/zoom/28D520C/pacote-adriana-cortadores.jpg" />
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan lacinia</p>
+            <span class="price">Preço: R$XXXX,XX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
         </div>
-        <div class="my-div3">
-            Olá, mundo 3!
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://img.elo7.com.br/product/zoom/28D520C/pacote-adriana-cortadores.jpg" />
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan lacinia</p>
+            <span class="price">Preço: R$XXXX,XX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://img.elo7.com.br/product/zoom/28D520C/pacote-adriana-cortadores.jpg" />
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan lacinia</p>
+            <span class="price">Preço: R$XXXX,XX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://img.elo7.com.br/product/zoom/28D520C/pacote-adriana-cortadores.jpg" />
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan lacinia</p>
+            <span class="price">Preço: R$XXXX,XX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://img.elo7.com.br/product/zoom/28D520C/pacote-adriana-cortadores.jpg" />
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan lacinia</p>
+            <span class="price">Preço: R$XXXX,XX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3 class="product-name">Produto</h3>
+            <img src="https://img.elo7.com.br/product/zoom/28D520C/pacote-adriana-cortadores.jpg" />
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan lacinia</p>
+            <span class="price">Preço: R$XXXX,XX</span>
+            <button class="buy-button">Adicionar ao carrinho</button>
         </div>
     </div>
+
 </body>
+
 </html>
